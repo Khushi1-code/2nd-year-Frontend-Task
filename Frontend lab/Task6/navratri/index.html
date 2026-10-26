@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GLA's Navratri Invitation</h1>
+    <script>
+        let date = prompt("Enter your date to visit GLA in month October");
+        date = (Number)(date);
+        if(date>0 && date<=31 && Number.isFinite(date) && Number.isInteger(date)){
+           let result = date>=11 && date<=18?"Yes, you are welcome to visit GLA's Navratri":"No, you are not allowed";
+           alert(result);
+           document.write("Date: " + date + " October 2026");
+        }
+        else{
+            alert("Enter a valid date");
+            document.write("Enter a valid date");
+
+        }
+    </script>
+    
+</body>
+</html>
