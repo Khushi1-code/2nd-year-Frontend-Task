@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+    let sum_p=0, sum_n=0, cout_zero=0;
+    let arr = [1,0,2,-1,5,-4,0];
+    for(let i=0; i<arr.length; i++){
+        if(arr[i]===0) cout_zero++;
+        if(arr[i]>0) sum_p += arr[i];
+        else sum_n += arr[i];
+    }
+    document.write("Sum of positive numbers: " + sum_p + "<br>");
+    document.write("Sum of negative numbers: " + sum_n + "<br>");
+    document.write("Total no. of zeroes: " + cout_zero);
+    
+    </script>
+</body>
+</html>

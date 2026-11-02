@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Numbers</title>
+</head>
+<body>
+    <h2>Armstrong Numbers b/w 100 and 999</h2>
+    <script>
+        for(let i=100; i<=999; i++){
+           let sum=0; num=i;
+            while(num!=0){
+                sum += Math.pow(num%10,3);
+                num=Math.floor(num/10);
+            }
+            if(sum==i) document.write(i + "<br>");
+        }
+    </script>
+</body>
+</html>
